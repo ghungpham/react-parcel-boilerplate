@@ -1,0 +1,41 @@
+{
+  "name": "hook-react-app",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "author": "ghungpham <pham.ghungj@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "pretest": "eslint src/ --ext .js --ext .jsx",
+    "test:eslint": "yarn run test:eslint",
+    "precommit": "lint-staged",
+    "start": "NODE_ENV=development parcel src/index.html --open",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url ./"
+  },
+  "lint-stage": {
+    "*.{js,jsx,json,scss,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "prettier": "^1.19.1",
+    "react-hot-loader": "^4.12.19"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2"
+  }
+}
