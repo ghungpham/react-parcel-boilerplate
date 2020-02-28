@@ -1,5 +1,8 @@
 node_modules/
 build/
+dist
+.cache
+
 logs
 *.log
 npm-debug.log*
