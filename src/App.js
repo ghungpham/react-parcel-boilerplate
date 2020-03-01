@@ -3,7 +3,7 @@ import React from "react";
 const App = () => {
   return (
     <div>
-      <h1>React Parcel Starter</h1>
+      <h1>Understanding command line</h1>
     </div>
   );
 };
